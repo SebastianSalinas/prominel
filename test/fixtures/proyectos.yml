@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyText
+  presupuesto: 1
+  obrero_id: 
+  lat_ubicacion: 1.5
+  lon_ubicacion: 1.5
+
+two:
+  nombre: MyText
+  presupuesto: 1
+  obrero_id: 
+  lat_ubicacion: 1.5
+  lon_ubicacion: 1.5

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @obrero.nombre %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @obrero.email %>
+</p>
+
+<p>
+  <strong>Nacimiento:</strong>
+  <%= @obrero.nacimiento %>
+</p>
+
+<p>
+  <strong>Lat hogar:</strong>
+  <%= @obrero.lat_hogar %>
+</p>
+
+<p>
+  <strong>Lon hogar:</strong>
+  <%= @obrero.lon_hogar %>
+</p>
+
+<%= link_to 'Edit', edit_obrero_path(@obrero) %> |
+<%= link_to 'Back', obreros_path %>

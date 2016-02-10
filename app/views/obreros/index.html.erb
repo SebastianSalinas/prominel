@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Obreros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Nacimiento</th>
+      <th>Lat hogar</th>
+      <th>Lon hogar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @obreros.each do |obrero| %>
+      <tr>
+        <td><%= obrero.nombre %></td>
+        <td><%= obrero.email %></td>
+        <td><%= obrero.nacimiento %></td>
+        <td><%= obrero.lat_hogar %></td>
+        <td><%= obrero.lon_hogar %></td>
+        <td><%= link_to 'Show', obrero %></td>
+        <td><%= link_to 'Edit', edit_obrero_path(obrero) %></td>
+        <td><%= link_to 'Destroy', obrero, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Obrero', new_obrero_path %>

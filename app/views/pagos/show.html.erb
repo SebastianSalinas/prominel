@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @pago.descripcion %>
+</p>
+
+<p>
+  <strong>Proyecto:</strong>
+  <%= @pago.proyecto %>
+</p>
+
+<p>
+  <strong>Neto:</strong>
+  <%= @pago.neto %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @pago.iva %>
+</p>
+
+<p>
+  <strong>Factura:</strong>
+  <%= @pago.factura %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @pago.cliente %>
+</p>
+
+<%= link_to 'Edit', edit_pago_path(@pago) %> |
+<%= link_to 'Back', pagos_path %>

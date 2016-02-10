@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyText
+  email: MyText
+  nacimiento: 2016-02-10
+  lat_hogar: 1.5
+  lon_hogar: 1.5
+
+two:
+  nombre: MyText
+  email: MyText
+  nacimiento: 2016-02-10
+  lat_hogar: 1.5
+  lon_hogar: 1.5

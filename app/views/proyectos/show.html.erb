@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @proyecto.nombre %>
+</p>
+
+<p>
+  <strong>Presupuesto:</strong>
+  <%= @proyecto.presupuesto %>
+</p>
+
+<p>
+  <strong>Obrero:</strong>
+  <%= @proyecto.obrero %>
+</p>
+
+<p>
+  <strong>Lat ubicacion:</strong>
+  <%= @proyecto.lat_ubicacion %>
+</p>
+
+<p>
+  <strong>Lon ubicacion:</strong>
+  <%= @proyecto.lon_ubicacion %>
+</p>
+
+<%= link_to 'Edit', edit_proyecto_path(@proyecto) %> |
+<%= link_to 'Back', proyectos_path %>

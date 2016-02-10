@@ -19,7 +19,7 @@ def self.import(file)
 
 		cheque = row[0]
 		chequera = row[1]
-		valor = row[2].tr('$','')
+		valor = row[2].tr('$','').tr('.','')
 		proveedor = row[3]
 		fecha = row[4]
 		detalle = row[5]
@@ -29,21 +29,6 @@ def self.import(file)
         sql = "INSERT INTO documentos (cheque, chequera, valor, proveedor, fecha, centrocosto, cobrado, plazo, created_at, updated_at) VALUES (" + cheque + "," + chequera + "," + valor + "," + proveedor + ",'" +  fecha  +  "'," + centrocosto + "," + pagado + "," + plazo +", '" + created_at +"', '" + created_at + "')"
         puts sql														
         res = ActiveRecord::Base.connection.execute(sql)
-
-#    t.integer  "cheque"
-#    t.integer  "chequera"
-#    t.integer  "valor"
-#    t.integer  "proveedor"
-#    t.date     "fecha"
-#    t.integer  "oocc"
-#    t.integer  "factura"
-#    t.integer  "centrocosto"
-#    t.integer  "cobrado"
-#    t.boolean  "nulo"
-#    t.boolean  "nopago"
-#    t.integer  "plazo"
-#    t.datetime "created_at",  null: false
-#    t.datetime "updated_at",  null: false
 	end
 
 end

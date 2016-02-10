@@ -1,0 +1,33 @@
+<%= form_for(@agente) do |f| %>
+  <% if @agente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@agente.errors.count, "error") %> prohibited this agente from being saved:</h2>
+
+      <ul>
+      <% @agente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_area :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :vendedor %><br>
+    <%= f.text_area :vendedor %>
+  </div>
+  <div class="field">
+    <%= f.label :fono %><br>
+    <%= f.text_area :fono %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_area :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
