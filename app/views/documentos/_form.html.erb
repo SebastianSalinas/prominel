@@ -1,0 +1,65 @@
+<%= form_for(@documento) do |f| %>
+  <% if @documento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@documento.errors.count, "error") %> prohibited this documento from being saved:</h2>
+
+      <ul>
+      <% @documento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cheque %><br>
+    <%= f.number_field :cheque %>
+  </div>
+  <div class="field">
+    <%= f.label :chequera %><br>
+    <%= f.number_field :chequera %>
+  </div>
+  <div class="field">
+    <%= f.label :valor %><br>
+    <%= f.number_field :valor %>
+  </div>
+  <div class="field">
+    <%= f.label :proveedor %><br>
+    <%= f.number_field :proveedor %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br>
+    <%= f.date_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :oocc %><br>
+    <%= f.number_field :oocc %>
+  </div>
+  <div class="field">
+    <%= f.label :factura %><br>
+    <%= f.number_field :factura %>
+  </div>
+  <div class="field">
+    <%= f.label :centrocosto %><br>
+    <%= f.number_field :centrocosto %>
+  </div>
+  <div class="field">
+    <%= f.label :cobrado %><br>
+    <%= f.number_field :cobrado %>
+  </div>
+  <div class="field">
+    <%= f.label :nulo %><br>
+    <%= f.check_box :nulo %>
+  </div>
+  <div class="field">
+    <%= f.label :nopago %><br>
+    <%= f.check_box :nopago %>
+  </div>
+  <div class="field">
+    <%= f.label :plazo %><br>
+    <%= f.number_field :plazo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

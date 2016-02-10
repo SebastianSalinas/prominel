@@ -1,0 +1,32 @@
+I, [2016-01-16T18:26:57.412803 #4547]  INFO -- : Started GET "/" for 192.168.1.20 at 2016-01-16 18:26:57 -0300
+I, [2016-01-16T18:26:57.479623 #4547]  INFO -- : Processing by DashboardsController#dashboard_1 as HTML
+I, [2016-01-16T18:27:27.507040 #4547]  INFO -- :   Rendered dashboards/dashboard_1.html.erb within layouts/application (30018.9ms)
+I, [2016-01-16T18:27:27.507714 #4547]  INFO -- : Completed 500 Internal Server Error in 30028ms (ActiveRecord: 0.0ms)
+F, [2016-01-16T18:27:27.512403 #4547] FATAL -- : 
+ActionView::Template::Error ():
+    200:                     <div class="feed-element">
+    201:                         <a href="<%= url_for :controller => 'appviews', :action => 'profile' %>" class="pull-left">
+    202: 
+    203:                         <img alt="image" class="img-circle" src="<%= image_url 'profile.jpg' %>">
+    204:                         </a>
+    205:                         <div class="media-body ">
+    206:                             <small class="pull-right">5m ago</small>
+  app/views/dashboards/dashboard_1.html.erb:203:in `_app_views_dashboards_dashboard___html_erb___3055449817086657776_37733160'
+
+
+I, [2016-01-16T18:27:35.219969 #5446]  INFO -- : Started GET "/" for 192.168.1.20 at 2016-01-16 18:27:35 -0300
+I, [2016-01-16T18:27:35.240228 #5446]  INFO -- : Processing by DashboardsController#dashboard_1 as HTML
+I, [2016-01-16T18:28:39.261698 #5446]  INFO -- :   Rendered dashboards/dashboard_1.html.erb within layouts/application (64013.3ms)
+I, [2016-01-16T18:28:39.262066 #5446]  INFO -- : Completed 500 Internal Server Error in 64022ms (ActiveRecord: 0.0ms)
+F, [2016-01-16T18:28:39.263974 #5446] FATAL -- : 
+ActionView::Template::Error ():
+    200:                     <div class="feed-element">
+    201:                         <a href="<%= url_for :controller => 'appviews', :action => 'profile' %>" class="pull-left">
+    202: 
+    203:                         <img alt="image" class="img-circle" src="<%= image_url 'profile.jpg' %>">
+    204:                         </a>
+    205:                         <div class="media-body ">
+    206:                             <small class="pull-right">5m ago</small>
+  app/views/dashboards/dashboard_1.html.erb:203:in `_app_views_dashboards_dashboard___html_erb__1272429222642861976_36931400'
+
+

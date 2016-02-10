@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cheque: 1
+  chequera: 1
+  valor: 1
+  proveedor: 1
+  fecha: 2016-02-09
+  oocc: 1
+  factura: 1
+  centrocosto: 1
+  cobrado: 1
+  nulo: false
+  nopago: false
+  plazo: 1
+
+two:
+  cheque: 1
+  chequera: 1
+  valor: 1
+  proveedor: 1
+  fecha: 2016-02-09
+  oocc: 1
+  factura: 1
+  centrocosto: 1
+  cobrado: 1
+  nulo: false
+  nopago: false
+  plazo: 1

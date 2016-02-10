@@ -11,6 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160209203631) do
+
+  create_table "documentos", force: :cascade do |t|
+    t.integer  "cheque"
+    t.integer  "chequera"
+    t.integer  "valor"
+    t.integer  "proveedor"
+    t.date     "fecha"
+    t.integer  "oocc"
+    t.integer  "factura"
+    t.integer  "centrocosto"
+    t.integer  "cobrado"
+    t.boolean  "nulo"
+    t.boolean  "nopago"
+    t.integer  "plazo"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
 end

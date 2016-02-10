@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cheque:</strong>
+  <%= @documento.cheque %>
+</p>
+
+<p>
+  <strong>Chequera:</strong>
+  <%= @documento.chequera %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @documento.valor %>
+</p>
+
+<p>
+  <strong>Proveedor:</strong>
+  <%= @documento.proveedor %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @documento.fecha %>
+</p>
+
+<p>
+  <strong>Oocc:</strong>
+  <%= @documento.oocc %>
+</p>
+
+<p>
+  <strong>Factura:</strong>
+  <%= @documento.factura %>
+</p>
+
+<p>
+  <strong>Centrocosto:</strong>
+  <%= @documento.centrocosto %>
+</p>
+
+<p>
+  <strong>Cobrado:</strong>
+  <%= @documento.cobrado %>
+</p>
+
+<p>
+  <strong>Nulo:</strong>
+  <%= @documento.nulo %>
+</p>
+
+<p>
+  <strong>Nopago:</strong>
+  <%= @documento.nopago %>
+</p>
+
+<p>
+  <strong>Plazo:</strong>
+  <%= @documento.plazo %>
+</p>
+
+<%= link_to 'Edit', edit_documento_path(@documento) %> |
+<%= link_to 'Back', documentos_path %>
